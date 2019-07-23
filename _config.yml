@@ -1,5 +1,6 @@
 name: Ata Karagoz
 markdown: kramdown
+baseurl: /atakaragoz.github.io
 permalink: /blog/:year/:month/:day/:title
 defaults:
   - scope:
