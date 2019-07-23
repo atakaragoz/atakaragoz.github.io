@@ -1,3 +1,8 @@
 name: Ata Karagoz
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
