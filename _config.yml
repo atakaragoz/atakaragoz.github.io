@@ -7,3 +7,5 @@ defaults:
       path: "assets/images"
     values:
       image: true
+
+theme: jekyll-theme-hacker
