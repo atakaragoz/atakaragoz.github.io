@@ -1,34 +1,37 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<div class='typewriter'>
-			<h3>Howdy, I'm Ata Karagoz</h3>
-			</div>
-			<p>
-				I am a third year PhD student in the Psych & Brain Sciences program at Washington University in St. Louis.
-				I work with Dr. Zach Reagh in the <a href="https://sites.wustl.edu/complexmemlab/">Complex Memory Lab</a>.
-				I am also a collaborating student with Dr. Wouter Kool in the <a href="http://cdmlab.wustl.edu/">Control and Decision Making Lab</a>.
-			</p>
-			<p>Here are a few things I have been interested in recently:</p>
-			<ul>
-				<li>Cognitive Maps</li>
-				<li>Event Segmentation</li>
-				<li>Reinforcement Learning</li>
-				<li>Spatial Coding</li>
-			</ul>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <div class="typewriter">
+        <h3>Howdy, I'm Ata Karagoz</h3>
+      </div>
+      <p>
+        I am a fourth year PhD student in the Psych & Brain Sciences program at
+        Washington University in St. Louis. I work with Dr. Zach Reagh in the <a
+          href="https://sites.wustl.edu/complexmemlab/">Complex Memory Lab</a
+        >. I am also a collaborating student with Dr. Wouter Kool in the <a
+          href="http://cdmlab.wustl.edu/">Control and Decision Making Lab</a
+        >.
+      </p>
+      <p>Here are a few things I have been interested in recently:</p>
+      <ul>
+        <li>Cognitive Maps</li>
+        <li>Event Segmentation</li>
+        <li>Reinforcement Learning</li>
+        <li>Spatial Coding</li>
+      </ul>
+    </main>
+    <Footer />
+  </body>
 </html>
