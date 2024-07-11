@@ -2,7 +2,7 @@
 layout: "../layouts/BlogPost.astro"
 title: "Publicatons"
 description: "Lorem ipsum dolor sit amet"
-updatedDate: "December 9th 2023"
+updatedDate: "July 11th 2023"
 ---
 
 ## Submitted
@@ -11,9 +11,11 @@ updatedDate: "December 9th 2023"
 
 2. **Karagoz, A.**, Moran E.K., Barch, D., Kool, W.\*, Reagh, Z.M.\* Evidence for shallow cognitive maps in schizophrenia [Preprint]. bioRxiv. https://www.biorxiv.org/content/10.1101/2024.02.26.582214v1 
 
+3. **Karagoz, A.B.**, Kool, W.\*, Reagh, Z.M.\* (2024). Free recall is shaped by inference and scaffolded by event structure [Preprint]. PsyArXiv. https://doi.org/10.31234/osf.io/dn9vq
+
 ## 2024
 
-1. **Karagoz, A. B.**, Reagh, Z. M., & Kool, W. (2023). The construction and use of cognitive maps in model-based control. Journal of Experimental Psychology: General. https://doi.org/10.1037/xge0001491
+1. **Karagoz, A. B.**, Reagh, Z. M., & Kool, W. (2024). The construction and use of cognitive maps in model-based control. Journal of Experimental Psychology: General. https://doi.org/10.1037/xge0001491
 
 ## 2023
 
