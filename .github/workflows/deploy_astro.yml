@@ -19,12 +19,21 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Install, build, and upload your site
         uses: withastro/action@v2
-        # with:
-        # path: . # The root location of your Astro project inside the repository. (optional)
-        # node-version: 18 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
-        # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+        with:
+          # Optional: Path to your Astro project
+          path: .
+          # Optional: Node.js version
+          node-version: 18
+          # Optional: Package manager (npm, yarn, pnpm)
+          # package-manager: npm
+          # Required: Artifact name to use for the build output
+          artifact-name: "github-pages"
 
   deploy:
     needs: build
