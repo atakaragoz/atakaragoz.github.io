@@ -6,12 +6,23 @@ updatedDate: "January 6th 2023"
 heroImage: "/Lab_website_headshot.jpg"
 ---
 
-Currently, I am a PhD student. Way back at the beginning I was born in the outskirts of Istanbul, Turkey and moved to Texas when I was 6 years old. Ever since that young age trying to adapt to a large environmental change I was into thinking about thinking.
+I'll help transform your bio from an academic-focused narrative to one more suitable for industry roles. Here's a revised version:
 
-Fast-forward to high school and I was planning to be an engineer, so I took a bunch of engineering classes. I worked on a project that is currently in the international space station (true story). After some thought, and too much sci-fi, I wanted to get back into thinking about thinking so I decided to apply to a neuroscience bachelors degree.
+# Professional Bio
 
-At UT Austin I struggled with my coursework and adjusting to college life. This all changed when I was able to engage in a great deal of research in the Preston Lab. I did a lot of fMRI scanning, some coding of experiments and analyses, and then stayed on for two years as a post-bacc lab manager. The Preston Lab was a super fun group and got me hooked on neuroscience research.
+I was born in the outskirts of Istanbul, Turkey and moved to Texas at age 6. This early cross-cultural experience sparked my interest in cognitive processes and adaptive learning—themes that continue to influence my professional journey.
 
-Now I'm at Wash U in St. Louis and it's amazing! I'm surrounded by excellent researchers and great people. I am given free reign to come up with wacky ideas (one of which even ended up as a full suite of projects: more coming soon). I also have the best mentors I could have possibly asked for.
+During high school, I balanced technical skills with creative thinking, contributing to a project that was later implemented on the International Space Station. This early success guided me toward a degree in neuroscience at UT Austin, where I combined rigorous academic training with practical research.
 
-I am working on a variety of projects involving: Memory, reinforcement learning (RL), and fMRI. Stay tuned for some fun projects on event segmentation and RL.
+While at UT Austin, I developed expertise in:
+- Large scale data analysis of behavior and neural signals
+- Experimental design and coding, often helping others turn ideas into code
+
+My PhD work at Washington University in St. Louis has further honed my ability to conceptualize and execute complex projects. I specialize in connecting machine learning and cognitive science, with particular focus on:
+- Reinforcement learning algorithms
+- Neural decoding and representational similarity approaches
+- Data visualization and analysis
+- Optimizing analytic pipelines to process large quantities of data
+
+I thrive in environments that value innovation and cross-disciplinary approaches. My background combining technical implementation with theoretical understanding positions me to deliver insights that bridge cognitive science and practical applications.
+

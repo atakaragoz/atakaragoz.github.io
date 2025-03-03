@@ -9,9 +9,11 @@ updatedDate: "July 11th 2023"
 
 1. Morse, S. J., **Karagoz, A.**, & Reagh, Z. (2023). Event boundaries directionally influence item-level recognition memory [Preprint]. PsyArXiv. https://doi.org/10.31234/osf.io/h8bj2
 
-2. **Karagoz, A.**, Moran E.K., Barch, D., Kool, W.\*, Reagh, Z.M.\* Evidence for shallow cognitive maps in schizophrenia [Preprint]. bioRxiv. https://www.biorxiv.org/content/10.1101/2024.02.26.582214v1 
+## 2025
 
-3. **Karagoz, A.B.**, Kool, W.\*, Reagh, Z.M.\* (2024). Free recall is shaped by inference and scaffolded by event structure [Preprint]. PsyArXiv. https://doi.org/10.31234/osf.io/dn9vq
+1. **Karagoz, A.**, Moran E.K., Barch, D., Kool, W.\*, Reagh, Z.M.\* Evidence for shallow cognitive maps in schizophrenia [Preprint]. bioRxiv. https://www.biorxiv.org/content/10.1101/2024.02.26.582214v1 (accepted at CABN) 
+
+2. **Karagoz, A.B.**, Kool, W.\*, Reagh, Z.M.\* (2024). Free recall is shaped by inference and scaffolded by event structure [Preprint]. PsyArXiv. https://doi.org/10.31234/osf.io/dn9vq (accepted at Communications Psychology)
 
 ## 2024
 

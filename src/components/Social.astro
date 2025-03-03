@@ -1,5 +1,16 @@
 ---
 const { platform, username } = Astro.props;
----
+// Define base URLs for different platforms
 
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+const getUrl = (platform, username) => {
+  const platformUrls = {
+    github: `https://www.github.com/${username}`,
+    bsky: `https://bsky.app/profile/${username}`,
+    linkedin: `https://www.linkedin.com/in/${username}`
+  };
+  
+  return platformUrls[platform.toLowerCase()] || `https://www.${platform}.com/${username}`;
+};
+
+---
+<a href={getUrl(platform, username)}>{platform}</a>
