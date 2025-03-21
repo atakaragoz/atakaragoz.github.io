@@ -5,11 +5,11 @@ const { platform, username } = Astro.props;
 const getUrl = (platform, username) => {
   const platformUrls = {
     github: `https://www.github.com/${username}`,
-    bsky: `https://bsky.app/profile/${username}`,
+    bluesky: `https://bsky.app/profile/${username}`,
     linkedin: `https://www.linkedin.com/in/${username}`
   };
   
-  return platformUrls[platform.toLowerCase()] || `https://www.${platform}.com/${username}`;
+  return platformUrls[platform.toLowerCase()];
 };
 
 ---
