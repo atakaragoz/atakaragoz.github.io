@@ -6,8 +6,6 @@ updatedDate: "January 6th 2023"
 heroImage: "/Lab_website_headshot.jpg"
 ---
 
-I'll help transform your bio from an academic-focused narrative to one more suitable for industry roles. Here's a revised version:
-
 # Professional Bio
 
 I was born in the outskirts of Istanbul, Turkey and moved to Texas at age 6. This early cross-cultural experience sparked my interest in cognitive processes and adaptive learning—themes that continue to influence my professional journey.
