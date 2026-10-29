@@ -1,0 +1,320 @@
+% CV for Ata B. Karagoz -- rebuilt 2026-10-29 from the Sep 2026 cv.pdf.
+% Build:  ./build.sh        (writes cv/cv.pdf; add --publish to copy it to ../cv.pdf)
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,left=0.9in,right=0.9in,top=0.75in,bottom=0.9in,footskip=0.35in]{geometry}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{linkblue}{HTML}{1A5276}
+\definecolor{footgrey}{HTML}{7F807F}
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,
+  pdftitle={Ata B. Karagoz, CV},pdfauthor={Ata B. Karagoz}}
+
+% ---------- page style ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{footgrey}Ata B. Karagoz}
+\fancyfoot[R]{\footnotesize\color{footgrey}\thepage}
+\setlength{\parindent}{0pt}
+\raggedbottom
+% fewer hyphenated names/titles at line ends
+\hyphenpenalty=1000
+\exhyphenpenalty=1000
+\widowpenalty=10000
+\clubpenalty=10000
+
+% ---------- section heading: small caps + full-width rule ----------
+% Page-break rules: a heading never ends a page, and an entry's title line,
+% subline, and bullets stay together. Breaks are allowed between entries.
+\newif\ifcvafterhead
+\newcommand{\cvsection}[1]{%
+  \par\vspace{10pt}%
+  {\scshape #1}\par\nopagebreak\vspace{-6pt}%
+  \noindent\rule{\textwidth}{0.4pt}\par\nopagebreak\vspace{6pt}%
+  \global\cvafterheadtrue}
+
+% ---------- entries ----------
+% \cventry{Bold title}{place (roman)}{dates}{italic subline}
+%   Leave #2 or #4 empty to drop them. Subline wraps inside the full width,
+%   so long lines (dissertation, advisor) no longer collide with the date.
+\newcommand{\cventry}[4]{%
+  \par\ifcvafterhead\else\penalty0\fi\global\cvafterheadfalse
+  \begin{tabularx}{\textwidth}{@{}X@{\hspace{1em}}r@{}}
+    \textbf{#1}\if\relax\detokenize{#2}\relax\else, #2\fi & #3 \\
+  \end{tabularx}\par\nopagebreak
+  \if\relax\detokenize{#4}\relax\else
+    \vspace{-1pt}{\itshape #4\par}\nopagebreak
+  \fi
+  \vspace{4pt}}
+% an extra italic line under an entry
+\newcommand{\cvsub}[1]{\nopagebreak\vspace{-4pt}{\itshape #1\par}\nopagebreak\vspace{4pt}}
+% separator used inside sublines
+\newcommand{\sep}{\quad|\quad}
+
+% bullets under entries
+\newenvironment{cvitems}
+  {\nopagebreak\vspace{-2pt}\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=0pt,parsep=0pt,label=\textbullet,beginpenalty=10000]}
+  {\end{itemize}\vspace{5pt}}
+
+% references: hanging indent
+\newenvironment{cvrefs}
+  {\csname @beginparpenalty\endcsname=10000 
+   \begin{list}{}{\leftmargin=1.5em\itemindent=-1.5em\itemsep=5pt\topsep=0pt\parsep=0pt}}
+  {\end{list}\vspace{2pt}}
+
+\newcommand{\me}{\textbf{Karagoz, A.B.}}
+\newcommand{\eq}{\textsuperscript{\dag}}   % equal contribution
+\newcommand{\pres}{\textsuperscript{*}}    % presenting author
+\newcommand{\note}[1]{\vspace{2pt}{\itshape #1\par}}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{center}
+  {\LARGE\bfseries Ata B. Karagoz, Ph.D.}\\[6pt]
+  Institute for Mind and Biology, The University of Chicago\\[3pt]
+  {\small
+  \href{mailto:atak@uchicago.edu}{atak@uchicago.edu}\quad\textbullet\quad 832-738-8196\\[2pt]
+  \href{https://orcid.org/0000-0002-7032-0355}{ORCID}\quad\textbullet\quad
+  \href{https://scholar.google.com/citations?user=AWZ6vkQAAAAJ&hl=en}{Google Scholar}\quad\textbullet\quad
+  \href{https://github.com/atakaragoz}{GitHub}}
+\end{center}
+\vspace{-6pt}
+
+% ================= APPOINTMENTS =================
+\cvsection{Appointments}
+\cventry{The University of Chicago}{Chicago, IL}{Aug.\ 2025 -- Present}
+  {Postdoctoral Scholar, Institute for Mind and Biology (Bakkour Lab)}
+
+% ================= EDUCATION =================
+\cvsection{Education}
+\cventry{Washington University in St.\ Louis}{St.\ Louis, MO}{Aug.\ 2020 -- Aug.\ 2025}
+  {Ph.D.\ in Psychological and Brain Sciences}
+\cvsub{Dissertation: Segmentation and Memory in Interactive, Inferential Events}
+\cvsub{Advisor: Zachariah M.\ Reagh, Ph.D.}
+\cventry{Washington University in St.\ Louis}{St.\ Louis, MO}{Aug.\ 2020 -- Dec.\ 2022}
+  {M.A.\ in Psychological and Brain Sciences}
+\cventry{The University of Texas at Austin}{Austin, TX}{Aug.\ 2014 -- May 2018}
+  {Bachelor of Science in Neuroscience}
+
+% ================= RESEARCH INTERESTS =================
+\cvsection{Research Interests}
+How people learn about the world and use what they have learned to guide value-based decisions,
+studied through the interaction of memory and decision-making and formalized with computational
+models. Related interests include event memory, reinforcement learning, naturalistic stimuli, and
+functional neuroimaging.
+
+% ================= FELLOWSHIPS =================
+\cvsection{Fellowships, Grants, and Awards}
+\cventry{Ruth L.\ Kirschstein NRSA Postdoctoral Fellowship (F32)}{}{2026}
+  {Sponsor: Akram Bakkour, Ph.D.\sep Scored: Impact 30, 20th percentile (pending funding decision)}
+\cventry{Complexity-GAINs International Summer School, Santa Fe Institute}{}{Aug.\ 2023}
+  {Competitive selection ($\sim$30 participants); NSF-funded; Isaac Newton Institute, Cambridge, UK}
+\begin{cvitems}
+  \item One of three winning final-project teams.
+  \item The win led to a follow-up workshop at SFI (see Service).
+\end{cvitems}
+\cventry{NINDS Interdisciplinary Training Grant (CCSN)}{}{July 2022 -- July 2024}
+  {Cognitive, Computational, and Systems Neuroscience; funded by NINDS and the McDonnell Center for Systems Neuroscience}
+
+% ================= PUBLICATIONS =================
+\cvsection{Peer-Reviewed Publications}
+\begin{cvrefs}
+\item Tang, R., \me, Delarazan, A.I., \& Reagh, Z.M. (2026). Active linking through narratives
+  facilitates associative inference. \emph{Proceedings of the National Academy of Sciences}.
+\item \me, Kool, W.\eq, \& Reagh, Z.M.\eq\ (2025). Free recall is shaped by inference and scaffolded
+  by event structure. \emph{Communications Psychology}.
+\item \me, Moran, E.K., Barch, D., Kool, W.\eq, \& Reagh, Z.M.\eq\ (2025). Evidence for shallow
+  cognitive maps in schizophrenia. \emph{Cognitive, Affective, \& Behavioral Neuroscience}.
+\item \me, Reagh, Z.M.\eq, \& Kool, W.\eq\ (2024). Construction and use of cognitive maps in
+  model-based control. \emph{Journal of Experimental Psychology: General}.
+\item \me, Morse, S.J., \& Reagh, Z.M. (2023). Cortico-hippocampal networks carry information
+  about characters and their relationships in an extended narrative. \emph{Neuropsychologia}.
+\item Sherrill, K.R., Molitor, R.J., \me, Atyam, M., Mack, M.L., \& Preston, A.R. (2023).
+  Generalization of cognitive maps across space and time. \emph{Cerebral Cortex}.
+\end{cvrefs}
+\note{\dag\ denotes equal contribution.}
+
+\cvsection{Preprints}
+\begin{cvrefs}
+\item \me, \& Bakkour, A. (2026). Learning and using value maps in multi-dimensional choice.
+  Preprint.% TODO add link: Preprint: \url{...}.
+\item Bouffard, N.R., Delarazan, A.I., \me, Zacks, J.M., \& Reagh, Z.M. (2026). Age differences
+  in hippocampal neural timescales during movie-viewing. Preprint:
+  \url{https://doi.org/10.64898/2026.05.05.723065}.
+\item Morse, S.J., \me, \& Reagh, Z.M. (2023). Event boundaries directionally influence
+  item-level recognition memory. Preprint: \url{https://psyarxiv.com/h8bj2/}.
+\end{cvrefs}
+
+\cvsection{Manuscripts in Preparation}
+\begin{cvrefs}
+\item \me, Sadek, J., \& Bakkour, A. Valence framing gates a memory-based familiarity heuristic
+  in value-guided choice.
+\item \me, Morse, S.J., Reagh, Z.M.\eq, \& Kool, W.\eq\ Complementary roles for PHC and lateral
+  OFC in cognitive map generation.
+\end{cvrefs}
+
+% ================= PRESENTATIONS =================
+\cvsection{Talks \& Symposia}
+\begin{cvrefs}
+\item \me\pres, Kool, W., \& Reagh, Z.M. (2024). Event boundaries and interactive inference shape
+  the content and organization of memory. Nanosymposium talk, Society for Neuroscience (SfN),
+  Chicago, IL.
+\item \me\pres, Kool, W., \& Reagh, Z.M. (2024). Representations of cognitive maps underlying
+  model-based planning. Symposium talk, Cognitive Neuroscience Society (CNS).
+\item \me\pres, Kool, W., \& Reagh, Z.M. (2023). Cognitive and neural representations of cognitive
+  maps underlying model-based planning. Nanosymposium talk, Society for Neuroscience (SfN).
+\end{cvrefs}
+
+\cvsection{Poster \& Co-Authored Presentations}
+\begin{cvrefs}
+\item \me\pres, \& Bakkour, A. (2026). Tracking attribute sampling during categorical and relational
+  value inference. Poster, Cognitive Neuroscience Society (CNS).
+\item \me\pres, Kool, W., \& Reagh, Z.M. (2023). The influence of rule-based event boundaries on
+  item memory. Poster, International Conference of Learning and Memory (LearnMem).
+\item Morse, S.J.\pres, \me, \& Reagh, Z.M. (2023). Event boundaries at encoding influence mnemonic
+  discrimination. Poster, International Conference of Learning and Memory (LearnMem).
+\item Roome, H.E.\pres, Sherrill, K.R., Nguyen, K.V., \me, Coughlin, C.A., \& Preston, A.R. (2022).
+  Medial temporal lobe error signals mediate developmental differences in spatial memory precision.
+  Nanosymposium talk, Society for Neuroscience (SfN).
+\item Sherrill, K.R.\pres, Roome, H.E., \me, Long, J.M., \& Preston, A.R. (2022). Emergence of
+  hippocampal and ventromedial prefrontal cortex context-dependent coding during virtual navigation.
+  Nanosymposium talk, Society for Neuroscience (SfN).
+\item \me\pres, Reagh, Z.M., \& Kool, W. (2022). Constructing and using cognitive maps for
+  model-based control. Poster, Reinforcement Learning and Decision Making (RLDM).
+\item \me\pres, \& Reagh, Z.M. (2022). Representations of perceptual versus semantic relationships
+  among characters in naturalistic events. Poster, Context and Episodic Memory Symposium (CEMS).
+\item Reagh, Z.M.\pres, Morse, S.J., Fishman, R., Angulo-Lopera, S., \me, \& Delarazan, A.I. (2022).
+  Event boundaries at encoding influence mnemonic discrimination. Poster, Cognitive Neuroscience
+  Society (CNS).
+\item Delarazan, A.I.\pres, \me\pres, Montchal, M.E., Yassa, M.A., Ranganath, C., \& Reagh, Z.M. (2021).
+  Hippocampal and entorhinal contributions to naturalistic event context reinstatement. Virtual
+  poster, Society for Neuroscience (SfN).
+\item \me\pres, Reagh, Z.M., \& Kool, W. (2021). The construction and use of cognitive maps in
+  model-based control. Virtual poster, Psychonomic Society Annual Meeting.
+\item \me\pres, \& Reagh, Z.M. (2021). Decoding perceptual and semantic relatedness among
+  characters in naturalistic events. Virtual poster, Cognitive Neuroscience Society (CNS).
+\end{cvrefs}
+\note{* denotes presenting author.}
+
+% ================= RESEARCH EXPERIENCE =================
+\cvsection{Research Experience}
+\cventry{Bakkour Lab}{The University of Chicago}{Aug.\ 2025 -- Present}
+  {Postdoctoral Scholar\sep Supervisor: Akram Bakkour, Ph.D.}
+\begin{cvitems}
+  \item Design behavioral and fMRI studies of memory-guided, value-based decision-making.
+  \item Collect and analyze fMRI datasets.
+  \item Develop computational models of choice behavior.
+\end{cvitems}
+\cventry{Complex Memory Lab}{Washington University in St.\ Louis}{Aug.\ 2020 -- Aug.\ 2025}
+  {Graduate Research Assistant\sep Supervisor: Zachariah Reagh, Ph.D.}
+\begin{cvitems}
+  \item Designed and ran behavioral and fMRI studies of event memory and model-based control.
+  \item Built computational models linking event structure, inference, and recall.
+\end{cvitems}
+\cventry{Preston Lab}{The University of Texas at Austin}{Jan.\ 2018 -- Aug.\ 2020}
+  {Lab Manager\sep Supervisor: Alison Preston, Ph.D.}
+\begin{cvitems}
+  \item Coordinated data collection and analysis across memory-integration and navigation projects.
+  \item Scheduled sessions and built the participant pool for behavioral and scanning studies.
+\end{cvitems}
+\cventry{Preston Lab}{The University of Texas at Austin}{Nov.\ 2015 -- Jan.\ 2018}
+  {Undergraduate Research Assistant\sep Supervisor: Alison Preston, Ph.D.}
+\begin{cvitems}
+  \item Assisted in fMRI scanning studies.
+  \item Wrote MATLAB analysis scripts for ongoing projects.
+  \item Designed a study and developed its stimulus-presentation code in MATLAB.
+\end{cvitems}
+
+% ================= TEACHING =================
+\cvsection{Teaching \& Mentoring}
+\cventry{Graduate Teaching Assistant}{\textit{Washington University in St.\ Louis}}{Jan.\ 2023 -- May 2023}
+  {Course: Computational Cognitive Science (cross-listed, graduate and upper-level undergraduate)}
+\begin{cvitems}
+  \item Wrote and graded Python programming assignments.
+  \item Led weekly review sessions.
+  \item Guided students through their final computational modeling projects.
+\end{cvitems}
+\cventry{Teaching Assistant}{\textit{Washington University in St.\ Louis}}{Jan.\ 2022 -- May 2022}
+  {Course: Neurobiology of Learning and Memory}
+\begin{cvitems}
+  \item Delivered a guest lecture on spatial navigation.
+  \item Graded assignments and led exam review sessions.
+\end{cvitems}
+\cventry{Teaching Assistant}{\textit{Washington University in St.\ Louis}}{Sep.\ 2021 -- Dec.\ 2021}
+  {Course: Human Learning and Memory}
+\begin{cvitems}
+  \item Delivered a guest lecture on spatial cognition.
+  \item Wrote and graded quizzes.
+  \item Led exam review sessions.
+\end{cvitems}
+\cventry{Mentoring --- Master's Students}{}{Oct.\ 2025 -- Present}{}
+\begin{cvitems}
+  \item Jalal Sadek \textbf{(The University of Chicago)} --- co-author on manuscript in preparation.
+\end{cvitems}
+\cventry{Mentoring --- Undergraduate Research Assistants}{}{June 2018 -- Present}
+  {Complex Memory Lab, Washington University in St.\ Louis}
+\begin{cvitems}
+  \item Ron Fishman, Jacob Tartakovsky, Sofia Angulo-Lopera
+\end{cvitems}
+\vspace{-4pt}{\itshape Preston Lab, The University of Texas at Austin\par}\vspace{2pt}
+\begin{cvitems}
+  \item Jaida McKee, Doru Gucer, Katherine Vasquez
+\end{cvitems}
+
+% ================= SERVICE =================
+\cvsection{Service \& Outreach}
+\cventry{Co-Organizer, ``Assessing Representation in Minds and Artificial Systems''}{}{Sep.\ 2024}
+  {3-day workshop, Santa Fe Institute\sep Co-organized with David Krakauer (SFI)}
+\begin{cvitems}
+  \item Awarded to the three winning project teams from the 2023 Complexity-GAINs summer school.
+  \item Co-presented the introductory talk for the session ``Mapping the Space of Representations.''
+  \item Invited speakers: Erica Cartmill, Ben Falandays, Jacob Foster, Martha Lewis, Brice M\'enard,
+    Alessandro Palmarini, Andrew Stier, Joey Velez-Ginorio.
+\end{cvitems}
+\cventry{Ad-Hoc Peer Reviewer}{}{2022 -- Present}{}
+\begin{cvitems}
+  \item \emph{Neuron} (co-review), \emph{Nature Reviews Neuroscience} (co-review), \emph{Nature Communications},
+    \emph{eLife} (co-review), \emph{Cerebral Cortex}, \emph{Cognition}, \emph{Communications Psychology},
+    \emph{Memory \& Cognition}
+\end{cvitems}
+\cventry{Psychology Outreach with Elementary Schoolers}{}{Sep.\ 2020 -- Dec.\ 2020}{}
+\begin{cvitems}
+  \item Taught introductory psychology over Zoom.
+  \item Designed remote perception demonstrations.
+\end{cvitems}
+\cventry{GitHub Clinic}{\textit{Complex Memory Lab}}{Sep.\ 2020}{}
+\begin{cvitems}
+  \item Ran a lab-wide workshop on version control and reproducible git practice.
+\end{cvitems}
+
+% ================= MEMBERSHIPS =================
+\cvsection{Professional Memberships}
+\begin{cvitems}
+  \item Cognitive Neuroscience Society, Postdoctoral Member
+  \item Psychonomic Society, Member
+\end{cvitems}
+
+% ================= SKILLS =================
+\cvsection{Skills}
+\begin{cvitems}
+  \item \textbf{Programming:} Python, MATLAB, bash scripting
+  \item \textbf{Computational Modeling:} reinforcement learning and model-based control models,
+    hierarchical Bayesian parameter estimation, PyTorch, JAX
+  \item \textbf{fMRI Preprocessing \& Analysis:} fMRIPrep, FSL/FEAT, ANTs, multivariate pattern analysis
+  \item \textbf{Reproducible Workflows:} git/GitHub, Jupyter, Docker/Singularity
+  \item \textbf{High-Performance Computing:} Texas Advanced Computing Center, WashU Center for
+    High Performance Computing, UChicago Research Computing Center
+  \item \textbf{Languages:} English (native), Turkish (native), German (basic)
+\end{cvitems}
+
+\end{document}
